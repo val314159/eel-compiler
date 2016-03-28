@@ -1,0 +1,15 @@
+{
+    "name":"eel-compiler",
+    "description":"eel compiler",
+    "version":"0.0.0",
+    "author":"<jmward@gmail.com>",
+    "main":"compiler.js",
+    "repository":{
+	"type":"git",
+	"url":"https://github.com/val314159/eel-compiler"
+    },
+    "scripts":{
+	"test":"node compiler_test.js"
+    },
+    "license":"MIT"
+}
