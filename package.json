@@ -1,7 +1,7 @@
 {
     "name":"eel-compiler",
     "description":"eel compiler",
-    "version":"0.0.0",
+    "version":"0.0.1",
     "author":"<jmward@gmail.com>",
     "main":"compiler.js",
     "repository":{
