@@ -20,7 +20,7 @@ C.List=function(x){
     var mac,fn=x[0];
     if(typeof(fn)==='symbol') fn=C.Symbol(fn)
     if(mac=C.atom(fn) && C._Macros[fn])return mac.apply(null,x.slice(1))
-    else if(C.Symbol(fn[0])==='lambda')	fn=C.Func.apply(null,fn)
+    else if(fn[0]&&C.Symbol(fn[0])==='lambda')fn=C.Func.apply(null,fn)
     else if(typeof(fn)!=='string')
 	print("MASSIVE ERROR THE CAR ISNT A SYMBOL/LAMBDA",fn, typeof(fn));
     return "_="+C.SoS(fn)+"("+x.slice(1).map(C.Expr).join(",")+")"}
